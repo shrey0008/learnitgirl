@@ -45,3 +45,14 @@ var stringArray = ["first string", "sjsa", "skdshfjksdh jsdhkjsdh ksjd sjdhskjd"
 
 
 
+function findWord() {
+	var max=0;
+	for (var i=0; i<stringArray.length; i++) {
+		if (stringArray[i].length > max) {
+			var max = stringArray[i].length;
+		}
+	}
+	console.log(max);
+}
+
+findWord();
