@@ -70,3 +70,17 @@ function dogData() {
 	document.getElementById('dogName').innerHTML = dog["nm"];
 	document.getElementById('namecharacters').innerHTML = length;
 	}
+
+
+function locateStr() {
+    var str = document.getElementById("locateStr").innerHTML;
+    var pos = str.indexOf("locate");
+    document.getElementById("demo").innerHTML = pos;
+}
+
+function max(num1, num2) {
+	var num1 = parseInt(prompt("Enter first number"));
+	var num2 = parseInt(prompt("Enter second number"));
+	document.getElementById('maxNumber').innerHTML = max;
+
+}
