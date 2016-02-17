@@ -41,7 +41,5 @@ function max(num1, num2) {
 console.log(max(10,6));
 
 
-var stringArray = ["first string", "sjsa", "skdshfjksdh jsdhkjsdh ksjd sjdhskjd"]; 
-
 
 
