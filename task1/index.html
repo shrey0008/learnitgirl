@@ -1,62 +1,60 @@
 <html>
-	<head>
-		<title> </title>
+	<head> 
 		<!-- Latest compiled and minified CSS -->
-		<meta charset="UTF-8">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-		<link href="main.css" rel="stylesheet">
-		<script src="main.js"> </script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
-		<!-- Optional theme -->
+			<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
-		<!-- Latest compiled and minified JavaScript -->
+			<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script src="js/main.js"> </script>
+		<script src="jquery-1.12.0.min.js"></script>
+		
+		<title> Programming samples. JavaScript tutorial. 
+		</title>
+
 	</head>
-			<body>
-				<div class="container-fluid">
-				  <div class="row-fluid">
-				    <div class="span2">
-				     	<h1> Fill that form </h1>
 
-				    </div>
-				    <div class="span10">
-				      	<form class="form-horizontal" role="form">
-					 <div class="form-group">
-				    <label class="control-label col-sm-2" for="name">NAME:</label>
-				    <div class="col-sm-6">
-				      <input type="text" class="form-control" id="name" placeholder="Enter your name"size=50px>
-				    </div>
-				  </div>
-				  <div class="form-group">
-				    <label class="control-label col-sm-2" for="surname">SURNAME:</label>
-				    <div class="col-sm-6"> 
-				      <input type="text" class="form-control" id="surname" placeholder="Enter your surname">
-				    </div>
-				  </div>
-				  <div class="form-group">
-				    <label class="control-label col-sm-2" for="email">TOWN:</label>
-				    <div class="col-sm-6"> 
-				      <input type="text" class="form-control" id="town" placeholder="Type your town here">
-				    </div>
-				  </div>
-				  <div class="form-group"> 
-				    <div class="col-sm-offset-2 col-sm-10">
-				      <button onclick="getdata()" type="button" class="btn btn-default mybutton"  >Submit</button>
-				    </div>
-				  </div>
-				</form>
-				    </div>
-				  </div>
-				</div>
+	<body>
+		<button onclick="displayDate()" class="btn btn-default" type="button">Display date!</button> 
+		<p id="date"> </p>
 
- <p class="results"> </p> 
+
+		<p id="change"> Is it possible to change page's content?</p>
+		<p> <button onclick="displayContent()" class="btn btn-default" type="button"> Change the content! </button>
+
+		<p> Is it also to possible change style? </p>
+		<button onclick="changeCss()" class="btn btn-default" type="button">Change style!</button>
+		
+		<p id="validation"> Can javascript validate the value ? </p>
+		<p> Please enter any number beetwen 1 and 10 </p>
+		<input id="validation" placeholder = "type here"> </input>
+		<button onclick="validateValue()" class="btn btn-default" type="button">Validate!</button>
+		<p id="inputValue"> </p>
+
+
+		<p> <button onclick="displayAlert()" type="button" class="btn btn-default" >display Alert</button> </p>
+		<p> <button onclick="document.write(5+9)" type="button" class="btn btn-default" >Document Write!</button> </p>
+
+
+		<p> <button onclick="displayResult()" type="button" class="btn btn-default" > Click it to display the result of your choice! </button> </p>
+		<p id="choice"> </p>
+
+		<p> <button onclick="displayName()" type="button" class="btn btn-default"> Let browser to welcome you! </button>
+		<p id="welcome"> </p>
+
+		<p> <button onclick="choosePerson()" type="button" class="btn btn-default"> Check the name of person you are playing with </button>
+		<p id="person"> </p>
+
+		<p> <button onmouseover="dogData()" type="button" class="btn btn-default"> Let's check what is your dog! </button>
+		<p id="dog"> </p>
+		<p id= "dogName"> </p>
+		<p id="namecharacters"> </p>
 
 
 
-					
 
 
-			</body>
-</html>
+	</body>
+	</html>
