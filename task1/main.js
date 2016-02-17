@@ -2,8 +2,8 @@ var tablica =[];
 
 function getdata() {
   
-	   var name = document.getElementById("name").value;
-	   tablica.push(name);
+	var name = document.getElementById("name").value;
+	tablica.push(name);
 
     var surname = document.getElementById("surname").value;
     tablica.push(surname)
