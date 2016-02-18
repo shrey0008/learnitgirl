@@ -41,5 +41,23 @@ function max(num1, num2) {
 console.log(max(10,6));
 
 
+var stringArray = ["first string", "sjsa", "skdshfjksdh jsdhkjsdh ksjd sjdhskjd"]; 
 
 
+
+function findWord() {
+	var max=0;
+	for (var i=0; i<stringArray.length; i++) {
+		if (stringArray[i].length > max) {
+			var max = stringArray[i].length;
+		}
+	}
+	console.log(max);
+}
+
+findWord();
+
+var mathArray = [4,5,6,7,8,5]
+
+Math.sum(mathArray);
+console.log(math.sum(MathArray));
