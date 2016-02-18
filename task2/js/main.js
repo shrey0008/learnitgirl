@@ -57,7 +57,20 @@ function findWord() {
 
 findWord();
 
-var mathArray = [4,5,6,7,8,5]
 
-Math.sum(mathArray);
-console.log(math.sum(MathArray));
+
+var multiplyArray = [6,7,8,12,3,4,9];
+
+
+function multiply(tablica) {
+	var multiplyResult = 1;	
+
+	for (var i=0; i<tablica.length; i++) {
+		multiplyResult = multiplyResult * tablica[i];
+			
+	}
+		return multiplyResult;
+}
+
+console.log(multiply(multiplyArray));
+
