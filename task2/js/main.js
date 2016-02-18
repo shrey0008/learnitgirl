@@ -74,3 +74,19 @@ function multiply(tablica) {
 
 console.log(multiply(multiplyArray));
 
+
+var sumArray = [6,7,8,12,3,4,9];
+
+
+function sum(tablica) {
+	var sumResult = 0;	
+
+	for (var i=0; i<tablica.length; i++) {
+		sumResult += tablica[i];
+			
+	}
+		return sumResult;
+}
+
+console.log(sum(sumArray));
+
