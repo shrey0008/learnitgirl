@@ -24,9 +24,14 @@ function checkNumber() {
 		document.getElementById('maxNumber').innerHTML = "The greater is" + " " + num1;
 		
 	}
+	else if (num1 === num2) {
+		document.getElementById('maxNumber').innerHTML = "The numers are the same";
+	}
 	else {
 		document.getElementById('maxNumber').innerHTML = "The greater is" + " " + num2;
 	}
+	
+
 }
 
 function max(num1, num2) {
