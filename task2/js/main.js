@@ -1,21 +1,38 @@
 var tablica =[];
 
-function getdata() {
+function getData() {
   
 	var name = document.getElementById("name").value;
-	tablica.push(name);
-
+	
     var surname = document.getElementById("surname").value;
-    tablica.push(surname)
+    
     // document.getElementById("results").innerHTML = surnname;
     
     var town = document.getElementById('town').value;
-    tablica.push(town);
-
+  	// validateValue();
+  	// show();
    
-    document.getElementsByClassName('results')[0].innerHTML= tablica;
-    alert(tablica);
-}
+    document.getElementsByClassName('results')[0].innerHTML= name + " " + surname + " " + town;
+    alert(name + " " + surname + " " + town);
+ }
+
+// function show() {
+//   document.getElementsByClassName('mybutton')[0].style.display = 'block';
+// }
+
+
+// function validateValue() {
+	 
+// 	if($('.form-control').val()==""); {
+// 		$('.alert alert-danger').show();
+// 	}
+// }
+
+
+// $('.mybutton').click(function() {
+// 	validateValue();
+
+// })
 
 function checkNumber() {
 	var num1 = parseInt(prompt("Enter first number"));
