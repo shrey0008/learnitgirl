@@ -16,23 +16,21 @@ function getData() {
     alert(name + " " + surname + " " + town);
  }
 
-// function show() {
-//   document.getElementsByClassName('mybutton')[0].style.display = 'block';
-// }
+function show() {
+  document.getElementsByClassName('alert alert-danger')[0].style.display = 'block';
+}
 
 
-// function validateValue() {
-	 
-// 	if($('.form-control').val()==""); {
-// 		$('.alert alert-danger').show();
-// 	}
-// }
+function validateValue() {
 
-
-// $('.mybutton').click(function() {
-// 	validateValue();
-
-// })
+	if($('.form-control').val()=="") {
+		show();
+	}
+	else {
+		getData();
+	}
+	
+}
 
 function checkNumber() {
 	var num1 = parseInt(prompt("Enter first number"));
