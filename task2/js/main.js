@@ -3,18 +3,21 @@ var tablica =[];
 function getData() {
   
 	var name = document.getElementById("name").value;
-	
-    var surname = document.getElementById("surname").value;
-    
-    // document.getElementById("results").innerHTML = surnname;
-    
-    var town = document.getElementById('town').value;
+	var surname = document.getElementById("surname").value;
+ 	var town = document.getElementById('town').value;
   	// validateValue();
   	// show();
-   
-    document.getElementsByClassName('results')[0].innerHTML= name + " " + surname + " " + town;
+   	$('.results').append(createRow(name, surname, town));
+    // document.getElementsByClassName('results')[0].innerHTML = name + " " + surname + " " + town;
     alert(name + " " + surname + " " + town);
  }
+
+function createRow(name, surname, town) {
+	return 	('<tr> <td>' + name + '</td>' + '<td>' + surname + '</td>' + '<td>' + town + '</td> <tr>');
+	 		
+}
+
+
 
 function show() {
   document.getElementsByClassName('alert alert-danger')[0].style.display = 'block';
@@ -28,6 +31,7 @@ function validateValue() {
 	}
 	else {
 		getData();
+		
 	}
 	
 }
