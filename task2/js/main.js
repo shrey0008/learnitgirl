@@ -18,7 +18,6 @@ function createRow(name, surname, town) {
 }
 
 
-
 function show() {
   document.getElementsByClassName('alert alert-danger')[0].style.display = 'block';
 }
@@ -31,6 +30,7 @@ function validateValue() {
 	}
 	else {
 		getData();
+		$('.form-control').val("");
 		
 	}
 	
