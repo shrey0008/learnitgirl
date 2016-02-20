@@ -126,7 +126,6 @@ function checkInp()
   {
     alert("Must input numbers");
     nm.style.border = "solid red";
-    return false;
   }
  
  
@@ -148,7 +147,7 @@ function validateValue() {
    	if (isNaN(t)!=true) {
 	    alert("Must input numbers");
 	    tn.style.border = "solid red";
-	    return false;
+	   
   	}
 
 }
