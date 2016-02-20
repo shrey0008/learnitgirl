@@ -31,25 +31,25 @@
 					 <div class="form-group">
 				    <label class="control-label col-sm-2" for="name">NAME:</label>
 				    <div class="col-sm-6">
-				      <input type="text" class="form-control" id="name" placeholder="Enter your name"size=50px >
+				      <input type="text" class="form-control" id="name" placeholder="Enter your name"size=50px oninput="checkInp()">
 				    </div>
 				  </div>
 				  <div class="form-group">
 				    <label class="control-label col-sm-2" for="surname">SURNAME:</label>
 				    <div class="col-sm-6"> 
-				      <input type="text" class="form-control" id="surname" placeholder="Enter your surname">
+				      <input type="text" class="form-control" id="surname" placeholder="Enter your surname" oninput="checkField()">
 				        <div id="notification"></div>
 				    </div>
 				  </div>
 				  <div class="form-group">
 				    <label class="control-label col-sm-2" for="town">TOWN:</label>
 				    <div class="col-sm-6"> 
-				      <input type="text" class="form-control" id="town" placeholder="Type your town here">
+				      <input type="text" class="form-control" id="town" placeholder="Type your town here" oninput="validateValue()">
 				    </div>
 				  </div>
 				  <div class="form-group"> 
 				    <div class="col-sm-offset-2 col-sm-10">
-				      <button onclick="validateValue()" type="button" class="btn btn-default mybutton"> Submit </button>
+				      <button onclick="getData()" type="button" class="btn btn-default mybutton"> Submit </button>
 				    </div>
 				  </div>
 				</form>

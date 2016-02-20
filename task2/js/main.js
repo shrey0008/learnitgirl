@@ -5,36 +5,44 @@ function getData() {
 	var name = document.getElementById("name").value;
 	var surname = document.getElementById("surname").value;
  	var town = document.getElementById('town').value;
-  	// validateValue();
-  	// show();
+
    	$('.results').append(createRow(name, surname, town));
     // document.getElementsByClassName('results')[0].innerHTML = name + " " + surname + " " + town;
     alert(name + " " + surname + " " + town);
+     $('.form-control').val("");
+
  }
+
+
 
 function createRow(name, surname, town) {
 	return 	('<tr> <td>' + name + '</td>' + '<td>' + surname + '</td>' + '<td>' + town + '</td> <tr>');
 	 		
 }
 
+// function showAlert() {
+// 	$('alert alert-danger').toggle();
+// }
+// function show() {
+//   document.getElementsByClassName('alert alert-danger')[0].style.display = 'block';
+// }
 
-function show() {
-  document.getElementsByClassName('alert alert-danger')[0].style.display = 'block';
-}
 
+// function validateValue() {
 
-function validateValue() {
-
-	if($('.form-control').val()=="") {
-		show();
-	}
-	else {
-		getData();
-		$('.form-control').val("");
-		
-	}
+// 	if($('.form-control').val()=="") {
+// 		showAlert();
+// 	}
+// 	else {
+// 		getData();	
+			
 	
-}
+		
+// 	}
+	
+// }
+
+
 
 function checkNumber() {
 	var num1 = parseInt(prompt("Enter first number"));
@@ -67,8 +75,6 @@ console.log(max(10,6));
 
 var stringArray = ["first string", "sjsa", "skdshfjksdh jsdhkjsdh ksjd sjdhskjd"]; 
 
-
-
 function findWord() {
 	var max=0;
 	for (var i=0; i<stringArray.length; i++) {
@@ -80,8 +86,6 @@ function findWord() {
 }
 
 findWord();
-
-
 
 var multiplyArray = [6,7,8,12,3,4,9];
 
@@ -113,4 +117,40 @@ function sum(tablica) {
 }
 
 console.log(sum(sumArray));
+
+function checkInp()
+{
+  var n=document.getElementById('name').value;
+  var nm=document.getElementById('name');
+  if (isNaN(n)!=true) 
+  {
+    alert("Must input numbers");
+    nm.style.border = "solid red";
+    return false;
+  }
+ 
+ 
+}
+
+function checkField() {
+	var sn=document.getElementById('surname').value;
+	var snm=document.getElementById('surname');
+   	if (isNaN(sn)!=true) {
+	    alert("Must input numbers");
+	    snm.style.border = "solid red";
+	    $('surname').value= "";
+  	}
+  }
+
+function validateValue() {
+	var t=document.getElementById('town').value;
+	var tn=document.getElementById('town');
+   	if (isNaN(t)!=true) {
+	    alert("Must input numbers");
+	    tn.style.border = "solid red";
+	    return false;
+  	}
+
+}
+
 

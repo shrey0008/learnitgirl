@@ -35,3 +35,7 @@ h1 {
 
 }
 	
+.form-control {
+	border-color: black;
+	border-radius: 2px;
+}
