@@ -16,6 +16,7 @@ function getData() {
    	}
    	
    	$('.form-control').val("");
+   	clearFields();
 
 
  }
@@ -133,6 +134,9 @@ function checkInp()
   {
     nm.style.border = "solid red 1px";
   }
+  else if (n === "") {
+		tn.style.border = "solid red 1px"
+	}
   else {
   	nm.style.border = "solid green 1px";
   }
@@ -146,6 +150,9 @@ function checkField() {
    	if (isNaN(sn)!=true) {
 	    snm.style.border = "solid red 1px";
   	}
+  	else if (sn === "") {
+		tn.style.border = "solid red 1px"
+	}
   	else {
   		snm.style.border = "solid green 1px";
   	}
@@ -156,7 +163,9 @@ function validateValue() {
 	var tn=document.getElementById('town');
    	if (isNaN(t)!=true) {
 	    tn.style.border = "solid red 1px";
-
+	}
+	else if (t === "") {
+		tn.style.border = "solid red 1px"
 	}
 
 	else {
@@ -173,3 +182,12 @@ function checkFields() {
 	
 	}
 
+function clearFields() {
+	document.getElementById('name').style.border = "solid black 1px"
+	document.getElementById('surname').style.border = "solid black 1px"
+	document.getElementById('town').style.border = "solid black 1px"
+}
+
+function fadeOut() {
+	$('.alert-danger').fadeOut();
+}
