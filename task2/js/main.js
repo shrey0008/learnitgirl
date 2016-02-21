@@ -169,7 +169,7 @@ function checkFields() {
 	document.getElementById('name').style.border = "solid red 1px"
 	document.getElementById('surname').style.border = "solid red 1px"
 	document.getElementById('town').style.border = "solid red 1px"
-	alert("Fill form!")
+	document.getElementById('alertdanger').style.display = "block";
 	
 	}
 
