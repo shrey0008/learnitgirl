@@ -6,51 +6,27 @@ function getData() {
 	var surname = document.getElementById("surname").value;
  	var town = document.getElementById('town').value;
 
-	if (name === "" && surname === "" && town === "") {
-	  		checkFields();
-	  } 
+		if (name === "" && surname === "" && town === "") {
+		  		checkFields();
+		  } 
+		
+		else {
+	  	
+	  	$('.results').append(createRow(name, surname, town));
+	   		alert(name + " " + surname + " " + town);
+	   		clearFields();
+	   	}
+	   	
+	$('.form-control').val("");
 	
-	else {
-  	$('.results').append(createRow(name, surname, town));
-   		alert(name + " " + surname + " " + town);
-   	}
-   	
-   	$('.form-control').val("");
-   	clearFields();
 
 
  }
-
-
 
 function createRow(name, surname, town) {
 	return 	('<tr> <td>' + name + '</td>' + '<td>' + surname + '</td>' + '<td>' + town + '</td> <tr>');
 	 		
 }
-
-// function showAlert() {
-// 	$('alert alert-danger').toggle();
-// }
-// function show() {
-//   document.getElementsByClassName('alert alert-danger')[0].style.display = 'block';
-// }
-
-
-// function validateValue() {
-
-// 	if($('.form-control').val()=="") {
-// 		showAlert();
-// 	}
-// 	else {
-// 		getData();	
-			
-	
-		
-// 	}
-	
-// }
-
-
 
 function checkNumber() {
 	var num1 = parseInt(prompt("Enter first number"));
@@ -126,17 +102,14 @@ function sum(tablica) {
 
 console.log(sum(sumArray));
 
-function checkInp()
-{
+function checkInp() {
   var n=document.getElementById('name').value;
   var nm=document.getElementById('name');
   if (isNaN(n)!=true) 
   {
     nm.style.border = "solid red 1px";
   }
-  else if (n === "") {
-		tn.style.border = "solid red 1px"
-	}
+ 
   else {
   	nm.style.border = "solid green 1px";
   }
@@ -150,9 +123,6 @@ function checkField() {
    	if (isNaN(sn)!=true) {
 	    snm.style.border = "solid red 1px";
   	}
-  	else if (sn === "") {
-		tn.style.border = "solid red 1px"
-	}
   	else {
   		snm.style.border = "solid green 1px";
   	}
@@ -164,16 +134,11 @@ function validateValue() {
    	if (isNaN(t)!=true) {
 	    tn.style.border = "solid red 1px";
 	}
-	else if (t === "") {
-		tn.style.border = "solid red 1px"
-	}
-
 	else {
 		tn.style.border = "solid green 1px";
 	}
 
 }
-
 function checkFields() {
 	document.getElementById('name').style.border = "solid red 1px"
 	document.getElementById('surname').style.border = "solid red 1px"
@@ -183,9 +148,9 @@ function checkFields() {
 	}
 
 function clearFields() {
-	document.getElementById('name').style.border = "solid black 1px"
-	document.getElementById('surname').style.border = "solid black 1px"
-	document.getElementById('town').style.border = "solid black 1px"
+	document.getElementById('name').style.border = "solid black 1px";
+	document.getElementById('surname').style.border = "solid black 1px";
+	document.getElementById('town').style.border = "solid black 1px";
 }
 
 function fadeOut() {
