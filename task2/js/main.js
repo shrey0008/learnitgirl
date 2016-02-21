@@ -6,10 +6,17 @@ function getData() {
 	var surname = document.getElementById("surname").value;
  	var town = document.getElementById('town').value;
 
-   	$('.results').append(createRow(name, surname, town));
-    // document.getElementsByClassName('results')[0].innerHTML = name + " " + surname + " " + town;
-    alert(name + " " + surname + " " + town);
-     $('.form-control').val("");
+	if (name === "" && surname === "" && town === "") {
+	  		checkFields();
+	  } 
+	
+	else {
+  	$('.results').append(createRow(name, surname, town));
+   		alert(name + " " + surname + " " + town);
+   	}
+   	
+   	$('.form-control').val("");
+
 
  }
 
@@ -157,4 +164,12 @@ function validateValue() {
 	}
 
 }
+
+function checkFields() {
+	document.getElementById('name').style.border = "solid red 1px"
+	document.getElementById('surname').style.border = "solid red 1px"
+	document.getElementById('town').style.border = "solid red 1px"
+	alert("Fill form!")
+	
+	}
 
