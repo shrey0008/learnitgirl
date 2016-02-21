@@ -124,8 +124,10 @@ function checkInp()
   var nm=document.getElementById('name');
   if (isNaN(n)!=true) 
   {
-    alert("Must input numbers");
-    nm.style.border = "solid red";
+    nm.style.border = "solid red 1px";
+  }
+  else {
+  	nm.style.border = "solid green 1px";
   }
  
  
@@ -135,9 +137,10 @@ function checkField() {
 	var sn=document.getElementById('surname').value;
 	var snm=document.getElementById('surname');
    	if (isNaN(sn)!=true) {
-	    alert("Must input numbers");
-	    snm.style.border = "solid red";
-	    $('surname').value= "";
+	    snm.style.border = "solid red 1px";
+  	}
+  	else {
+  		snm.style.border = "solid green 1px";
   	}
   }
 
@@ -145,11 +148,13 @@ function validateValue() {
 	var t=document.getElementById('town').value;
 	var tn=document.getElementById('town');
    	if (isNaN(t)!=true) {
-	    alert("Must input numbers");
-	    tn.style.border = "solid red";
-	   
-  	}
+	    tn.style.border = "solid red 1px";
+
+	}
+
+	else {
+		tn.style.border = "solid green 1px";
+	}
 
 }
-
 
