@@ -1,15 +1,12 @@
 <html>
 	<head> 
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-			<!-- Optional theme -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
-			<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="js/bootstrap.min.js"> </script>
+			
 		<script src="js/main.js"> </script>
-		<script src="jquery-1.12.0.min.js"></script>
+		
+		
 		
 		<title> Programming samples. JavaScript tutorial. 
 		</title>
@@ -17,6 +14,8 @@
 	</head>
 
 	<body>
+
+
 		<button onclick="displayDate()" class="btn btn-default" type="button">Display date!</button> 
 		<p id="date"> </p>
 
@@ -29,8 +28,8 @@
 		
 		<p id="validation"> Can javascript validate the value ? </p>
 		<p> Please enter any number beetwen 1 and 10 </p>
-		<input id="validation" placeholder = "type here"> </input>
-		<button onclick="validateValue()" class="btn btn-default" type="button">Validate!</button>
+		<input id="validation" placeholder = "type here" onkeydown="validateValue();"> </input>
+		<button  class="btn btn-default" type="button" onclick="validateValue();">Validate!</button>
 		<p id="inputValue"> </p>
 
 
@@ -51,8 +50,13 @@
 		<p id="dog"> </p>
 		<p id= "dogName"> </p>
 		<p id="namecharacters"> </p>
+		<p id="type"> </p>
 
+
+		<button onclick="this.innerHTML='of course you can'" type="button" class="btn btn-default" id="content"> Can I change the button content? </button>
 		
+		<button onmouseover="toggle_visibility();" class='btn btn default'>Click here to toggle visibility of element #foo</button>
+		<div id="foo">This is foo</div>
 		
 
 

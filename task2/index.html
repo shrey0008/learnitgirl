@@ -3,13 +3,15 @@
 		<title> </title>
 		<!-- Latest compiled and minified CSS -->
 		<meta charset="UTF-8">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link href="main.css" rel="stylesheet">
+	
 		<script src="js/main.js"> </script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		
 
 		<!-- Optional theme -->
-		<script src="js/bootstrap.min.js"> </script> 
+	
  
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="js/bootstrap.min.js"></script>
@@ -22,6 +24,8 @@
   					<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
  					 <strong>Fill the form!</strong> 
 						</div>
+				<div class="alert alert-success" style="display: none"> Congratulation! You've added your data! 
+				</div>
 				    <div class="span2">
 				     	<h1> Fill that form </h1>
 
@@ -31,7 +35,7 @@
 					 <div class="form-group">
 				    <label class="control-label col-sm-2" for="name">NAME:</label>
 				    <div class="col-sm-6">
-				      <input type="text" class="form-control" id="name" placeholder="Enter your name"size=50px oninput="checkInp()" onclick="fadeOut()">
+				      <input type="text" class="form-control" id="name" placeholder="Enter your name"size=50px oninput="checkInp()" onclick="fadeOut()" >
 				    </div>
 				  </div>
 				  <div class="form-group">
@@ -73,8 +77,8 @@
 		<p> <button onclick="checkNumber()" type="button" class="btn btn-default below"> Let's see which number is greater!</button> </p>
 
 		<p id="maxNumber"> </p>
-
-
+		<p> Let's see what type of variable is it </p>
+		<p id="type"> </p>
 
 
 					

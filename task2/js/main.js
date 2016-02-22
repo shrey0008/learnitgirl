@@ -15,6 +15,7 @@ function getData() {
 	  	$('.results').append(createRow(name, surname, town));
 	   		alert(name + " " + surname + " " + town);
 	   		clearFields();
+
 	   	}
 	   	
 	$('.form-control').val("");
@@ -134,6 +135,9 @@ function validateValue() {
    	if (isNaN(t)!=true) {
 	    tn.style.border = "solid red 1px";
 	}
+	else if (t === "") {
+		tn.style.border = "solid red 1px";
+	}
 	else {
 		tn.style.border = "solid green 1px";
 	}
@@ -156,3 +160,48 @@ function clearFields() {
 function fadeOut() {
 	$('.alert-danger').fadeOut();
 }
+
+
+function resetField(id) {
+	if (document.getElementById(id).style.border = "solid red 1px") {
+			document.getElementById(id).style.border =  "solid black 1px";
+	}
+		}
+
+// function Reset(e) {
+//     if(e.which == 8 && this.value.length == 0) {
+//          document.getElementById(e).style.border = "solid black 1px";
+//      }
+// }; 
+
+
+
+$(document).ready(function () {
+
+// 	$('.form-control').keyup(function(e) {
+// 		if (e.keyCode == 8) {
+			
+
+// 			}
+	
+// });
+
+
+	$('.form-control').keyup(function(e){
+   
+   		if (e.keyCode === 8){
+      		$(this).css("border", "solid black 1px");
+      		// console.log(e)
+      		// alert ("ok!")
+    
+   		}
+	});
+});
+
+// function keyUp(x) {
+// 	var x = document.getElementById(x);
+// 	if (x.keyCode === 8) {
+// 		alert('ok!')
+// 		x.style.border = "solid black 1px";
+// 	}
+// };
