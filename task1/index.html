@@ -1,10 +1,7 @@
 <html>
 	<head> 
 
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-		<script src="js/bootstrap.min.js"> </script>
-			
-		<script src="js/main.js"> </script>
+
 		
 		
 		
@@ -14,7 +11,10 @@
 	</head>
 
 	<body>
-
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="js/bootstrap.min.js"> </script>
+			
+		<script src="js/main.js"> </script>
 
 		<button onclick="displayDate()" class="btn btn-default" type="button">Display date!</button> 
 		<p id="date"> </p>
@@ -59,8 +59,25 @@
 		<div id="foo">This is foo</div>
 		
 
+		<button onclick="addingElements()" type="button" class="btn btn-default" id="content"> try to display array's content </button>
 
+		<table>
+			<thead>
+				<tr>
+    				<th>Fruits</th>
+    			</tr>
+    		</thead>
+  			<tbody id="tbody">
+  				<tr>
+  					<td> hello! </td>
+  				<tr>
+  			</tbody>
+		</table>
+		<input id="age"  value=""/>
 
+		<button onclick="votable()">Try it</button>
+
+		<p id="vote"></p>
 
 	</body>
 	</html>
