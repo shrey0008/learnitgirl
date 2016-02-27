@@ -9,20 +9,24 @@
   		<fieldset>
     		<legend>Personal information:</legend>
     		<br> First name:
-    		<div class="row"><input type="text" name="firstname" value="" id="commentName" onkeyup="validateName()"><label id="commentNamePrompt"> </label> <br>
+    		<div class="row"><input type="text" name="firstname" value="" id="commentName"  class="commentInput" onkeyup="validateName()" oninput="hidePrompt()"><label id="commentNamePrompt"> </label> <br>
     		</div>
     		<br> Last name:
-   		 	<div class="row"><input type="text" name="lastname" value="" id="commentLastName"><label id="commentLastNamePrompt"> </label> <br> </div>
+   		 	<div class="row"><input type="text" name="lastname" value="" id="commentLastName" class="commentInput" onkeyup="validateSurname()"><label id="commentLastNamePrompt" >  </label> <br> </div>
    		 	<br> Email:
-   		 	<div class="row"><input type="text" name="email" value="" id="commentEmail"><label id="commentEmailPrompt"> </label> <br> </div> 
+   		 	<div class="row"><input type="text" name="email" value="" id="commentEmail" class="commentInput" onkeyup="validateEmail()"><label id="commentEmailPrompt" > </label> <br> </div> 
    		 	<br> Phone:
-   		 	<div class="row"><input type="text" name="email" value="" id="commentEmail"><label id="commentEmailPrompt">  </label> <br> </div> 
-   		 	<br> Comment:
-   		 	<div class="row"><input type="text" name="comment" value="" id="comment"> <br>  <label id="commentPrompt">  </label> </div>
-    		<div class="row"><input type="submit" value="Submit"> </div>
+   		 	<div class="row"><input type="text" name="email" value="" id="commentPhone" class="commentInput" onkeyup="validatePhone()"><label id="commentPhonePrompt">  </label> <br> </div> 
+   		 	<br> Comment: 
+        <br>
+   		 	<textarea type="text" name="comment" value="" id="comment" class="commentInput" oninput="validateComment()"></textarea> <label id="commentPrompt">  </label> 
+        <br>
+        <div class="row" id="button" > <button type="button" value="Submit" onclick="validateForm()"> save </div> <label id="submitPrompt"> </label> 
   		</fieldset>
 	</form>
+
 </div>
+
 	</body>
 
 </html>
