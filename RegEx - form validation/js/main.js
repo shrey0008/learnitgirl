@@ -103,7 +103,7 @@ function validateForm() {
 
 	if (!validateName() && !validateComment() && !validateEmail () && !validatePhone() && !validateSurname ()) {
 	
-		producePrompt("Form has to be filled correctly", "submitPrompt", "red");
+		submitPrompt("COMPLETE FORM!", "submitPrompt", "red");
 	
 		return false;
 	}
@@ -121,3 +121,7 @@ function producePrompt(message, promptLocation, borderLocation, color, border) {
 	document.getElementById(borderLocation).style.border = border;
 }
 
+function submitPrompt(message, promptLocation, color) {
+	document.getElementById(promptLocation).innerHTML = message;
+	document.getElementById(promptLocation).style.color = color;
+}
