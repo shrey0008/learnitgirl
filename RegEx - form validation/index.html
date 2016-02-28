@@ -12,11 +12,11 @@
     		<div class="row"><input type="text" name="firstname" value="" id="commentName"  class="commentInput" onkeyup="validateName()" oninput="hidePrompt()"><label id="commentNamePrompt"> </label> <br>
     		</div>
     		<br> Last name:
-   		 	<div class="row"><input type="text" name="lastname" value="" id="commentLastName" class="commentInput" onkeyup="validateSurname()"><label id="commentLastNamePrompt" >  </label> <br> </div>
+   		 	<div class="row"><input type="text" name="lastname" value="" id="commentLastName" class="commentInput" onkeyup="validateSurname()" oninput="hidePrompt()" ><label id="commentLastNamePrompt" >  </label> <br> </div>
    		 	<br> Email:
-   		 	<div class="row"><input type="text" name="email" value="" id="commentEmail" class="commentInput" onkeyup="validateEmail()"><label id="commentEmailPrompt" > </label> <br> </div> 
+   		 	<div class="row"><input type="text" name="email" value="" id="commentEmail" class="commentInput" onkeyup="validateEmail()" oninput="hidePrompt()"><label id="commentEmailPrompt" > </label> <br> </div> 
    		 	<br> Phone:
-   		 	<div class="row"><input type="text" name="email" value="" id="commentPhone" class="commentInput" onkeyup="validatePhone()"><label id="commentPhonePrompt">  </label> <br> </div> 
+   		 	<div class="row"><input type="text" name="email" value="" id="commentPhone" class="commentInput" onkeyup="validatePhone()"><label id="commentPhonePrompt" oninput="hidePrompt()">  </label> <br> </div> 
    		 	<br> Comment: 
         <br>
    		 	<textarea type="text" name="comment" value="" id="comment" class="commentInput" oninput="validateComment()"></textarea> <label id="commentPrompt">  </label> 
@@ -24,8 +24,21 @@
         <div class="row" id="button" > <button type="button" value="Submit" onclick="validateForm()"> save </div> <label id="submitPrompt"> </label> 
   		</fieldset>
 	</form>
-
 </div>
+
+	 <table class="table table-striped">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Email</th>
+				<th>Phone</th>
+			</tr>
+		</thead>
+		<tbody class="results">
+					
+	   </tbody>
+	 </table>
+
 
 	</body>
 
