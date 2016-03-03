@@ -6,6 +6,7 @@ html {
 
 }
 
+
 .big {
 	background-color: white;
 }
@@ -38,7 +39,7 @@ h3 {
 
 
 h1 {
-	color: black;
+	color: white;
 	font-family: "Impact";
 	font-variant: cursive;
 	font-style: sans-serif;
@@ -61,4 +62,23 @@ cursor: pointer;
 
 .navbar {
 	background-color: 	#D8D8D8;
+}
+
+
+.grid {
+	width: 50px;
+	height: 50px;
+	}
+
+.male {
+	width: 250px;
+	height: 250px;
+}
+
+.tasks {
+	height: 1200px;
+	width: 1200px;
+}
+.inner {
+	display:none;
 }
