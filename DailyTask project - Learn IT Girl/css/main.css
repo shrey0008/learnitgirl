@@ -36,6 +36,14 @@ h3 {
 	text-align: center;
 }
 
+
+h1 {
+	color: black;
+	font-family: "Impact";
+	font-variant: cursive;
+	font-style: sans-serif;
+}
+
 .form {
 	background-color: #E8E8E8;
 	height: 300px;
@@ -44,4 +52,13 @@ h3 {
 	padding-bottom: 15px;
 	padding-left: 15px;
 	padding-right: 15px;
+
+}
+
+.list-group {
+cursor: pointer;
+}
+
+.navbar {
+	background-color: 	#D8D8D8;
 }
