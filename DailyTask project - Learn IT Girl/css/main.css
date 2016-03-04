@@ -35,6 +35,7 @@ html {
 
 h3 {
 	text-align: center;
+	color: #CC0066;
 }
 
 
@@ -43,6 +44,11 @@ h1 {
 	font-family: "Impact";
 	font-variant: cursive;
 	font-style: sans-serif;
+}
+
+h2 {
+	color: #CC0066;
+
 }
 
 #form {
@@ -86,7 +92,7 @@ cursor: pointer;
 
 .box {
 	height: 50px;
-	background-color: #CC0066;
+	background-color: 	#F8F8F8;
 	text-align: center;
 	color: white;
 }
