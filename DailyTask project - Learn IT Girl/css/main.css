@@ -45,7 +45,7 @@ h1 {
 	font-style: sans-serif;
 }
 
-.form {
+#form {
 	background-color: #E8E8E8;
 	height: 300px;
 	width:750px;
@@ -53,6 +53,7 @@ h1 {
 	padding-bottom: 15px;
 	padding-left: 15px;
 	padding-right: 15px;
+	display: none;
 
 }
 
@@ -61,7 +62,7 @@ cursor: pointer;
 }
 
 .navbar {
-	background-color: 	#D8D8D8;
+	background-color: 	000066;
 }
 
 
@@ -82,3 +83,12 @@ cursor: pointer;
 .inner {
 	display:none;
 }
+
+.box {
+	height: 50px;
+	background-color: #CC0066;
+	text-align: center;
+	color: white;
+}
+
+.
