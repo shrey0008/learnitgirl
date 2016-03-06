@@ -62,7 +62,7 @@ h2 {
 
 #form {
 	background-color: #E8E8E8;
-	height: 250px;
+	height: 400px;
 	width:100%;
 	padding-top: 15px;
 	padding-bottom: 15px;
@@ -91,10 +91,7 @@ h2 {
 	height: 250px;
 }
 
-.tasks {
-	height: 1200px;
-	width: 1200px;
-}
+
 .inner {
 	display:none;
 }
@@ -163,11 +160,12 @@ h2 {
 
 .search {
 	display:none;
+	margin-bottom: 20px;
 }
 
 #creator {
 	float: right;
-	margin-right: 40px;
+	margin-right: 100px;
 }
 
 .label {
@@ -189,5 +187,7 @@ h2 {
 
 .form-group {
 	cursor: pointer;
+	margin-left: 30px;
 }
+
 

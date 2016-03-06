@@ -31,6 +31,14 @@ $('.buttonmenu').click(function() {
 	$(this).next('.dropdown-menu').toggle();
 })
 
+$(function() {
+    $('#datetimepicker4').datetimepicker();
+    });
+
+$(function() {
+    $('#datetimepicker5').datetimepicker();
+    });
+
 
 
 });
