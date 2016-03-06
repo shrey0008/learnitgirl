@@ -1,15 +1,29 @@
 $(document).ready(function() {
 	
+$('#first').click(function()  {
+	$('#firstul').toggle();
+});
 
-	$("#first").click(function() {
-			$('#form').toggle();
-		});
-	$('#second').click(function() {
-		$('.inner').toggle();
-	})
-		$('#third').click(function() {
-		$('.innertwo').toggle();
-	})
+
+$('#second').click(function (){
+		$('#secondul').toggle();
+});
+
+$('.box').click(function() {
+	$(this).next('.innerbox').toggle();
+	return false
+});
+
+$('#createtask').click(function () {
+	$('#form').toggle();
+})
+
+$('.glyphicon-search').click(function () {
+	$('.search').show();
+
+});
+
+
 
 });
 

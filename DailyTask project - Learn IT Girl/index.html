@@ -9,37 +9,42 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/main.css" rel="stylesheet">
 	
+ 	
 		<script src="js/main.js"> </script>
 
 
 	</head>
 	<body>
-		
-
-  			<div class="container">
+		<div class="container">
   				<div class="row header" >
   					<nav class="navbar navbar-default">
-  						<h1> Simplify your life </h1>
+  						<h1> Plan your time    <span class="glyphicon glyphicon-search" aria-hidden="true"> </h1>			
    					</nav>
+   					</span>
 
+
+
+		 	
+
+  			
    			</div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 small">
 
 				<div class="row">
 					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 small">
 						<ul class="nav nav-pills nav-stacked">
- 							<li class="active"><a href="#">Create new task	</a></li>
-  							<li class="dropdown">
+ 							<li class="active" id="createtask"><a href="#">Create new task</a></li>
+  							<li class="dropdown" id="first">
 							    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Category
 							    <span class="caret"></span></a>
-						   		<ul class="dropdown-menu">
+						   		<ul class="dropdown-menu" id="firstul">
 							      <li><a href="#">Work</a></li>
 							      <li><a href="#">Home</a></li>
     							</ul>
 						  	</li>
-						 	<li class="dropdown">
+						 	<li class="dropdown" id="second">
 							    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Schedule
 							    <span class="caret"></span></a>
-						   		<ul class="dropdown-menu">
+						   		<ul class="dropdown-menu" id="secondul">
 							      <li><a href="#">Today</a></li>
 							      <li><a href="#">Next 7 days </a><li>
     							</ul>
@@ -48,92 +53,113 @@
 					</div>
 						
 						<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+
+							<div class="row">
+								 <div class="search">
+    								<input type="text" class="form-control" placeholder="Search">  
+    									
+    								
+ 								 </div>
+ 								 	
+		
+							</div>
+
+						<div class="row">
+						<form id="form">
+					    <div class="form-group">
+							<label for="inputTask">Add task description</label>
+								 <input type="text" class="form-control" id="inputTask" placeholder="Task">
+						</div>
+						<div class="form-group">
+							<div class="panel-body">
+              				 	<div class="btn-group btn-input clearfix">
+                				 	<button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
+                   						<span data-bind="label">Select One</span>&nbsp;<span class="caret"></span>
+                 					</button>
+						                 <ul class="dropdown-menu" role="menu">
+						                   <li><a href="#">WORK</a></li>
+						                   <li><a href="#">HOME/a></li>
+						                   <li><a href="#">This is a longer item that will not fit properly</a></li>
+						                 </ul>
+	               				</div>
+             				</div>
+                        </div>         
+						<div class="checkbox">
+							<label><input type="checkbox"></label>
+						</div>
+							<button type="submit" class="btn btn-primary">Create task</button>
+						</form>
+					</div>
+    
 					
 								<div> 
-									<h2> Monday </h2> 
+									<h2> Day </h2> 
 								</div>
 								<div class="box">
-								 	<h3> asdasd </h3>
+									<div class="dropdown"> 
+										<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"> 
+											<div class="dropdown-content">
+											    <div class="content">doing</div>
+											    <div class="content">done</div>
+										    
+										 	</div>
+										 	</span>
+									</div>
+									<h3> Single task title</h3>
+							    </div>
+
+							    <div class="innerbox">
+							    	<p> taralala </p>
+							    	<p> sadadas </p>
+							    </div> 
 								
-								
-							   </div>
 								<div class="box">
-								 	<h3> asdasd </h3>
-								 
-								</div>
+									<h3> Single task title </h3>
+							    </div>
+
+							    <div class="innerbox">
+							    	<p> taralala </p>
+							    </div> 
 						
 								<div class="box">
-								 	<h3> asdasd </h3>
-								 
-								</div>
-					
-								<div class="box">
-								 	<h3> asdasd </h3>
-								</div>
+									<h3> Single task title </h3>
+							    </div>
+
+							    <div class="innerbox">
+							    	<p> taralala </p>
+							    </div> 
+								<div class="box" >
+									<h3> Single task title </h3>
+							    </div>
+
+							    <div class="innerbox" >
+							    	<p> taralala </p>
+							    </div> 
 
 								<div> 
 									<h2> Tuesday </h2>
 								<div> 
 								<div class="box">
-								 	<h3> asdasd </h3>
-							   </div>
+									<h3> Single task title </h3>
+							    </div>
+
+							    <div class="innerbox" >
+							    	<p> taralala </p>
+							    </div> 
 								<div class="box">
-								 	<h3> asdasd </h3>
-								</div>
+									<h3> Single task title </h3>
+							    </div>
+
+							    <div class="innerbox">
+							    	<p> taralala </p>
+							    </div> 
 						
 	
 						</div>
 					
 				</div>
 
-					<form id="form" method="post">
-						<div class="title"><h2>Create task</h2></div>
-							<div class="element-input">
-								<label class="title"></label>
-									<div class="item-cont">
-										<input class="large" type="text" name="input1" placeholder="Create Task"/><span class="icon-place"></span>
-									</div>
-							</div>
-							<div class="element-select">
-								<label class="title"></label>
-									<div class="item-cont">
-										<div class="large"><span><select name="select" >
-											<option value="Today">WORK</option>
-											<option value="Next 7 days">HOME</option>
-											</select><i></i><span class="icon-place"></span></span>
-										</div>
-									</div>
-							</div>
-							<div class="element-radio">	
-								<label class="title">Priority<span class="required">*</span></label>		
-									<div class="column column3">
-										<label><input type="radio" name="radio" value="High" required="required"/><span>High</span></label>
-											</div><span class="clearfix"></span>
-									<div class="column column3">
-										<label><input type="radio" name="radio" value="Medium" required="required"/><span>Medium</span></label>
-											</div><span class="clearfix"></span>
-									<div class="column column3">
-										<label><input type="radio" name="radio" value="Low" required="required"/><span>Low</span></label>
-									</div><span class="clearfix"></span>
-							</div>
-							<div class="element-date">
-								<label class="title"></label>	
-									<div class="item-cont">
-											<input class="medium" data-format="yyyy-mm-dd" type="date" name="date" placeholder="Start Date"/><span class="icon-place"></span>
-									</div>
-							</div>
-							<div class="element-date">
-								<label class="title"></label>
-									<div class="item-cont">
-										<input class="medium" data-format="yyyy-mm-dd" type="date" name="date1" placeholder="End Date"/><span class="icon-place"></span>
-									</div>
-							</div>
-							<div class="submit">
-								<input type="submit" value="Submit"/>
-							</div>
-					</form>
-
-    
+				
 			
 
 				
