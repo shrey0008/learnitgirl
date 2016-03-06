@@ -9,6 +9,10 @@ $('#second').click(function (){
 		$('#secondul').toggle();
 });
 
+$('#third').click(function (){
+		$('#thirdul').toggle();
+});
+
 $('.box').dblclick(function() {
 	$(this).next('.innerbox').toggle();
 	return false
