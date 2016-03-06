@@ -37,8 +37,8 @@ h3 {
 
 	color: #CC0066;
 	padding-top: 10px;
-	
-        vertical-align:middle;
+	vertical-align:middle;
+	margin-left: 30px;
 }
 
 
@@ -62,7 +62,7 @@ h2 {
 
 #form {
 	background-color: #E8E8E8;
-	height: 300px;
+	height: 250px;
 	width:100%;
 	padding-top: 15px;
 	padding-bottom: 15px;
@@ -73,7 +73,7 @@ h2 {
 }
 
 .list-group {
-cursor: pointer;
+	cursor: pointer;
 }
 
 .navbar {
@@ -105,6 +105,8 @@ cursor: pointer;
 	vertical-align: center;
 	margin-top: 30px;
 	margin-bottom: 10px;
+	border-left: solid 2px red;
+
 
 }
 
@@ -150,16 +152,52 @@ cursor: pointer;
 .glyphicon {
 	font-size: 25px;
 	color: white;
-	float: right;
-	
+	float:right;
 	margin-top: 10px;
-
 }
 
 .hamburger {
-	color:black;
+	float: left;
+	margin-left: 10px;
 }
 
 .search {
 	display:none;
+}
+
+#creator {
+	float: right;
+	margin-right: 40px;
+}
+
+.label {
+	font-size: 15px;
+}
+
+.glyphicon-trash {
+	margin-right: 10px;
+}
+
+.glyphicon-star {
+	margin-right: 15px;
+}
+
+#formtitle {
+	margin-top: 3px;
+	text-align: center;
+}
+
+.form-group {
+	cursor: pointer;
+}
+
+/*it is only for presenting ui purpose, it will be changed. I want to write a js function which enables me to change box left-border depends on user's priority choice*/
+
+#two {
+	border-left: solid 2px green;
+}
+
+#three {
+		border-left: solid 2px yellow;
+}
 }

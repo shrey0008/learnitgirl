@@ -9,7 +9,7 @@ $('#second').click(function (){
 		$('#secondul').toggle();
 });
 
-$('.box').click(function() {
+$('.box').dblclick(function() {
 	$(this).next('.innerbox').toggle();
 	return false
 });
@@ -22,6 +22,14 @@ $('.glyphicon-search').click(function () {
 	$('.search').show();
 
 });
+
+$('#dn').click(function () {
+	$(this).next('tasks').style.textDecoration = "line-through";
+})
+
+$('.buttonmenu').click(function() {
+	$(this).next('.dropdown-menu').toggle();
+})
 
 
 

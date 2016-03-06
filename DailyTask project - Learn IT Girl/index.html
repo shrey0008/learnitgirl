@@ -18,9 +18,10 @@
 		<div class="container">
   				<div class="row header" >
   					<nav class="navbar navbar-default">
-  						<h1> Plan your time    <span class="glyphicon glyphicon-search" aria-hidden="true"> </h1>			
+  						<h1> Plan your time <span class="glyphicon glyphicon-search" aria-hidden="true"> </h1>			
    					</nav>
    					</span>
+
 
 
 
@@ -47,6 +48,7 @@
 						   		<ul class="dropdown-menu" id="secondul">
 							      <li><a href="#">Today</a></li>
 							      <li><a href="#">Next 7 days </a><li>
+							      <li><a href="#">Choose 7 days</a></li>
     							</ul>
 						  	</li>
 						</ul>
@@ -57,103 +59,153 @@
 							<div class="row">
 								 <div class="search">
     								<input type="text" class="form-control" placeholder="Search">  
-    									
-    								
  								 </div>
- 								 	
-		
 							</div>
 
 						<div class="row">
 						<form id="form">
-					    <div class="form-group">
-							<label for="inputTask">Add task description</label>
-								 <input type="text" class="form-control" id="inputTask" placeholder="Task">
-						</div>
-						<div class="form-group">
-							<div class="panel-body">
-              				 	<div class="btn-group btn-input clearfix">
-                				 	<button type="button" class="btn btn-default dropdown-toggle form-control" data-toggle="dropdown">
-                   						<span data-bind="label">Select One</span>&nbsp;<span class="caret"></span>
-                 					</button>
+							<div class="formtitle">
+								<h3 id="formtitle"> Create new task </h3>
+							</div>
+					    	<div class="form-group">
+								 	<input type="text" class="form-control" id="inputTask" placeholder="Add task description">
+							</div>
+							<div class="form-group">
+								
+	              				 	<div class="btn-group btn-input clearfix">
+	                				 	<button type="button" class="btn btn-default dropdown-toggle form-control buttonmenu" data-toggle="dropdown">
+	                   						<span data-bind="label">Choose category</span>&nbsp;<span class="caret"></span>
+	                 					</button>
 						                 <ul class="dropdown-menu" role="menu">
 						                   <li><a href="#">WORK</a></li>
-						                   <li><a href="#">HOME/a></li>
-						                   <li><a href="#">This is a longer item that will not fit properly</a></li>
+						                   <li><a href="#">HOME</a></li>
 						                 </ul>
-	               				</div>
+	               				
              				</div>
                         </div>         
-						<div class="checkbox">
-							<label><input type="checkbox"></label>
+						<div class="form-group">
+						 	<label class="radio-inline">
+      							<input type="radio" name="optradio">Priority High
+    						</label>
+    						<label class="radio-inline">
+      							<input type="radio" name="optradio">Priority Medium
+    						</label>
+    						<label class="radio-inline">
+      							<input type="radio" name="optradio">Priority Low
+    						</label>
 						</div>
-							<button type="submit" class="btn btn-primary">Create task</button>
+							<button type="submit" class="btn btn-primary" id="creator">Create task</button>
 						</form>
 					</div>
     
 					
 								<div> 
-									<h2> Day </h2> 
+									<h2> Today </h2> 
 								</div>
 								<div class="box">
-									<div class="dropdown"> 
+									
+									<div class="trash"> 
+										<span class="glyphicon glyphicon-trash" aria-hidden="true">  </span>
+									</div>
+									<div class="star"> 
+										<span class="glyphicon glyphicon-star" aria-hidden="true">  </span>
+									</div>
+									<div class="dropdown hamburger"> 
 										<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"> 
 											<div class="dropdown-content">
-											    <div class="content">doing</div>
-											    <div class="content">done</div>
+												 <div id="td">todo</div>
+											    <div id="do">doing</div>
+											    <div id="dn">done</div>
+											   
 										    
 										 	</div>
-										 	</span>
+										 </span>
 									</div>
-									<h3> Single task title</h3>
+									<h3 class="tasks">Task description
+
+											<span class="label label-danger">To do</span>
+											<span class="label label-success">Doing</span>
+									 </h3>
+										
+									
+
+							    </div>
+
+							    <div class="innerbox">
+							    	<p>Here I want to add place where I can edit task or change its date</p>
+							  
+							    </div> 
+								
+								<div class="box" id="two">
+									<div class="trash"> 
+										<span class="glyphicon glyphicon-trash" aria-hidden="true">  </span>
+									</div>
+									<div class="star"> 
+										<span class="glyphicon glyphicon-star" aria-hidden="true">  </span>
+									</div>
+									
+									<div class="dropdown hamburger"> 
+										<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"> 
+											<div class="dropdown-content">
+												 <div id="td">todo</div>
+											    <div id="do">doing</div>
+											    <div id="dn">done</div>
+											   
+										    
+										 	</div>
+										 </span>
+									</div>
+									<h3> Task description
+
+											<span class="label label-danger">To do</span>
+											<span class="label label-success">Doing</span>
+									 </h3>
+										
+									
+
 							    </div>
 
 							    <div class="innerbox">
 							    	<p> taralala </p>
 							    	<p> sadadas </p>
 							    </div> 
-								
-								<div class="box">
-									<h3> Single task title </h3>
-							    </div>
-
-							    <div class="innerbox">
-							    	<p> taralala </p>
-							    </div> 
-						
-								<div class="box">
-									<h3> Single task title </h3>
-							    </div>
-
-							    <div class="innerbox">
-							    	<p> taralala </p>
-							    </div> 
-								<div class="box" >
-									<h3> Single task title </h3>
-							    </div>
-
-							    <div class="innerbox" >
-							    	<p> taralala </p>
-							    </div> 
 
 								<div> 
-									<h2> Tuesday </h2>
+									<h2> Next day </h2>
 								<div> 
-								<div class="box">
-									<h3> Single task title </h3>
-							    </div>
+								<div class="box" id="three">
+									
+									<div class="trash"> 
+										<span class="glyphicon glyphicon-trash" aria-hidden="true">  </span>
+									</div>
+									<div class="star"> 
+										<span class="glyphicon glyphicon-star" aria-hidden="true">  </span>
+									</div>
+									<div class="dropdown hamburger"> 
+										<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"> 
+											<div class="dropdown-content">
+												 <div id="td">todo</div>
+											    <div id="do">doing</div>
+											    <div id="dn">done</div>
+											   
+										    
+										 	</div>
+										 </span>
+									</div>
+									<h3 > Task description
+											<span class="label label-danger">To do</span>
+											<span class="label label-success">Doing</span>
+									 </h3>
+										
+									
 
-							    <div class="innerbox" >
-							    	<p> taralala </p>
-							    </div> 
-								<div class="box">
-									<h3> Single task title </h3>
 							    </div>
 
 							    <div class="innerbox">
 							    	<p> taralala </p>
+							    	<p> sadadas </p>
 							    </div> 
-						
+							
 	
 						</div>
 					
