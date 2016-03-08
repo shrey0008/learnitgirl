@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Create Task</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Create Task</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"><div class="formtitle">
+								<h3 id="formtitle"> Create new task </h3>
+							</div></h4>
+        </div>
+        <div class="modal-body">
+         <form id="form">
+							
+					    	<div class="form-group">
+								 	<input type="text" class="form-control" id="inputTask" placeholder="Add task description">
+							</div>
+							<div class="form-group">
+								
+	              				 	<div class="btn-group btn-input clearfix">
+	                				 	<button type="button" class="btn btn-default dropdown-toggle form-control buttonmenu" data-toggle="dropdown">
+	                   						<span data-bind="label">Choose category</span>&nbsp;<span class="caret"></span>
+	                 					</button>
+						                 <ul class="dropdown-menu" role="menu">
+						                   <li><a href="#">WORK</a></li>
+						                   <li><a href="#">HOME</a></li>
+						                 </ul>
+	               				
+             				</div>
+                        </div>         
+						<div class="form-group">
+						 	<label class="radio-inline">
+      							<input type="radio" name="optradio">High Priority
+    						</label>
+    						<label class="radio-inline">
+      							<input type="radio" name="optradio"> Medium Priority
+    						</label>
+    						<label class="radio-inline">
+      							<input type="radio" name="optradio"> Low Priority
+    						</label>
+						</div>
+						<div class="form-group">
+            				<input type='text' class="form-control"	id='datetimepicker4'placeholder="Choose start date"/>
+       					 </div>
+            		
+            			<div class="form-group">
+							
+                				<input type='text' class="form-control"	id='datetimepicker5'placeholder="Choose end date"/>
+            			</div>
+       						
+							<button type="submit" class="btn btn-primary" id="creator">Create task</button>
+						</form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+</body>
+</html>
